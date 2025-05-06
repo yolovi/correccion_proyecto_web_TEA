@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Advent pro';
+    background-color: #E5E5E5;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0.5em;
+}
+nav a{
+    color: black;
+}
+
+.header_container {
+    height: 10em;
+    padding: 5em;
+    font-size: 2em;
+    background-image: url(./image/Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+}
+.fotohome {
+    width: 400px;
+    height: 300px;
+    margin: 1em;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video-content {
+    position: relative;
+    z-index: 1;
+}
+
+video[poster] {
+    object-fit: cover;
+    height: 15em;
+    width: 100em;
+    margin: 1em;
+}
+
+.header_portafolio {
+    height: 10em;
+    padding: 5em;
+    font-size: 2em;
+    padding: 3em;
+}
+.port img {
+    display: block;
+    width: 27em;
+    height: 20em;
+    margin: 2em;
+    
+}
+.port {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10em;
+
+}
+.header_sobremi {
+    height: 10em;
+    padding: 5em;
+    font-size: 2em;
+    background-image: url(./image/portadaES.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+}
+.fotos_sobremi{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+}
+.fotobio {
+    width: 300px;
+    height: 200px;
+}
+.footer {
+    background-color: #294447;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2em;
+    padding: 0.5em;
+}
+.contacto {
+    transition: transform 0.3s ease-out;
+}
+.contacto:hover {
+    transform: translateY(8px);
+}
+.contact {
+    height: 10em;
+    padding: 5em;
+    font-size: 2em;
+    background-image: url(./image/30.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    margin: 2em;
+}
+.footer a {
+    color: white;
+    font-weight: bold;
+}
