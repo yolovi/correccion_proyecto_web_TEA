@@ -1,6 +1,8 @@
 /* CORRECCION:
-    Falta reset de margin, pading, box-sizing
-
+    Falta reset de margin, pading, box-sizing.
+    Falta que sea diseño mobile first.
+    Falta uso de clases atómicas.
+    Falta agrupar por funcionalidad y comentar: esto facilita mantenimiento y escalabiliad
 */
 body {
     font-family: 'Advent pro';
