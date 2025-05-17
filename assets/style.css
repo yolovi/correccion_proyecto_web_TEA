@@ -1,8 +1,16 @@
+/* CORRECCION:
+    Falta reset de margin, pading, box-sizing
 
+*/
 body {
     font-family: 'Advent pro';
     background-color: #E5E5E5;
 }
+/* CORRECCION:
+    Falta z-index positivo para que se quede por encima del resto de elementos. Actualmente, cuando se superpone con otro elemento no pueden pulsarse los enlaces.
+    También necesita un font-size mayor en pantallas grandes y un background color para
+    que no se entremezcle con los fondos (puedes jugar con la opacidad si no quieres que sea solido).
+*/
 nav {
     position: fixed;
     top: 0;
@@ -12,7 +20,9 @@ nav {
 nav a{
     color: black;
 }
-
+/* CORRECCION:
+    Font-size lo cogemos mejor respecto al navegador (rem).
+*/
 .header_container {
     height: 10em;
     padding: 5em;
@@ -34,6 +44,9 @@ nav a{
     flex-wrap: wrap;
     margin: 1em;
 }
+/* CORRECCION:
+    position te va a coger referencia sobre el ancestro más cercano con una position diferente de static, sino encuentra será respecto de la pantalla. En cualquier caso, solo coge referencia respecto a (top O bottom) Y (left O right). Pero en ambos casos son excluyentes (si coge left y right se anulan entre si, lo mismo top y bottom)
+*/
 .background-video {
     position: absolute;
     top: 0;
@@ -60,6 +73,12 @@ video[poster] {
     margin: 1em;
 }
 
+/* CORRECCION:
+    rem => coge medida relativa respecto al font-size del navegador
+    em => coge medida relativa respecto al font-size del elemento padre
+    % => coge medida relativa respecto al tamaño del contenedor padre
+    Por tanto para height y width con % te será más fácil aplicar el valor que quieras.
+*/
 .header_portafolio {
     height: 10em;
     padding: 5em;

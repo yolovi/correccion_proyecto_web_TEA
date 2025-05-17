@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina Web</title>
+    <!-- CORRECCION:
+      link de fonts antes de nuestro css. El navegador lee de arriba hacia abajo, si pones primero tu hoja de estilos puede darte problemas.
+    -->
     <link rel="stylesheet" href="./assets/style.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 </head>
@@ -19,6 +22,10 @@
     </header>
     <main>
       <article class="main">
+        <!-- CORRECCION:
+         Codigo mal identado: es importante identar todo correctamente para facilitar la lectura. Aqui las imagenes dentro de una identacion de a seria mucho mas legible.
+         Cambiar div por sections. Solo utilizamos div cuando queremos agrupar sin poder aportar contenido semantico, pero aqui si podemos aportarlo.
+        -->
             <div class="home">
               <a href="biografia.html"><img class="fotohome" src="./assets/image/yo.jpg" alt="Trinidad" ></a>
               <h3>Sobre mí</h3>
@@ -37,6 +44,9 @@
         <a href="https://www.instagram.com/telenalbert/" class="contacto" target="_blank">Instagram</a>
         <a href="https://telenalbert.tumblr.com/?fbclid=PAZXh0bgNhZW0CMTEAAae3OOvGhXG7Re63SbkHQJB_l6w9SeMSpvpBj5Aq94OgwSWwHGhc3iOjrm_GiQ_aem_nORN9GaML-jR938qOw3PTQ" class="contacto" target="_blank">Tumblr</a>
       </footer>
+      <!-- CORRECCION:
+        Footer siempre fuera del main. A diferencia del header, que puede haber uno por cada apartado, solo tendremos un footer por pagina y este debe ir fuera del main. 
+      -->
     </main>
     <script src="main.js"></script>
 </body>
